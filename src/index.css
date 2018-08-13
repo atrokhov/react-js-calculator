@@ -1,0 +1,131 @@
+body {
+    background-image: url("https://www.dropbox.com/s/2ct0i6kc61vp0bh/wall.jpg?raw=1");
+    font-family: "Vibur", cursive;
+    font-size: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #141414;
+}
+
+#root{
+    text-align:center;
+}
+
+.calculator-title{
+    font-size:30px;
+    background: #fff;
+    width: 400px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: 2px solid black;
+    color: #4CAF50;
+}
+
+.mainCalc{
+    margin:0px;
+    padding:0px;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+.screen-row input{
+        width: 400px;
+    background: #ddd;
+    border: none;
+    color: #222;
+    padding: 10px;
+    text-align: right;
+}
+
+.button-row input[type='button']{
+    text-decoration: none;
+    outline: none;
+    color: #c6e2ff;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: none;
+    margin: 10px 20px;   font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165,.84,.44,1);
+    background-color: transparent;
+    font-family: "Vibur", cursive;
+    font-size: 20px;
+    animation: neon-blue .08s ease-in-out infinite alternate;
+}
+
+input[type='button']:hover{
+    color: #ffbcbc;
+    animation: neon-red .08s ease-in-out infinite alternate; 
+}
+
+.screen-row input[type="text"]{
+    background-color: transparent;
+    color: #c6e2ff; 
+    font-family: "Vibur", cursive;
+    font-size: 21px;
+    animation: neon-blue .08s ease-in-out infinite alternate;
+}
+
+.calculator-title{
+    background-color: transparent;
+    border: none;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon-blue .08s ease-in-out infinite alternate;
+}
+
+@keyframes neon-blue {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+@keyframes neon-red {
+  from {
+    text-shadow:
+    0 0 24px rgba(252,22,22,1),
+    0 0 120px rgba(245,70,70,1),
+    0 0 48px rgba(255,35,35,1),
+    0 0 84px rgba(246,28,28,1),
+    0 0 136px rgba(238,62,62,1),
+    0 0 216px rgba(255,45,45,1);
+  }
+  to {
+    text-shadow:
+    0 0 24px rgba(252,22,22,0.98),
+    0 0 120px rgba(245,70,70,0.90),
+    0 0 48px rgba(255,35,35,0.99),
+    0 0 88px rgba(246,28,28,0.95),
+    0 0 152px rgba(238,62,62,0.94),
+    0 0 240px rgba(255,45,45,1);
+  }
+}
